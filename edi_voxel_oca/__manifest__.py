@@ -7,7 +7,7 @@
     "development_status": "Production/Stable",
     "category": "Hidden",
     "author": "Tecnativa, Odoo Community Association (OCA)",
-    "website": "https://github.com/OCA/edi",
+    "website": "https://github.com/OCA/edi-voxel",
     "license": "AGPL-3",
     "depends": [
         "account",
