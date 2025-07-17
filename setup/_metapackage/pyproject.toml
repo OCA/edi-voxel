@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-oca-edi-voxel"
-version = "18.0.20250717.2"
+version = "18.0.20250717.3"
 dependencies = [
     "odoo-addon-edi_voxel_oca==18.0.*",
+    "odoo-addon-edi_voxel_sale_order_import_oca==18.0.*",
     "odoo-addon-edi_voxel_secondary_unit_oca==18.0.*",
     "odoo-addon-edi_voxel_stock_picking_oca==18.0.*",
 ]
