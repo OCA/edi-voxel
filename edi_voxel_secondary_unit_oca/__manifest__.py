@@ -5,7 +5,7 @@
     "summary": "Add Voxel UoM code to Secondary UoM model",
     "version": "18.0.1.0.0",
     "category": "Hidden",
-    "website": "https://github.com/OCA/edi",
+    "website": "https://github.com/OCA/edi-voxel",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "maintainers": ["ernestotejeda"],
     "license": "AGPL-3",
