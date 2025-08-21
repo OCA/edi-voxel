@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.1 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
 
 [//]: # (end addons)
