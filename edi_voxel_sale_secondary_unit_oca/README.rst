@@ -16,29 +16,29 @@ Edi Voxel Sale Secondary Unit Oca
 .. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fedi-lightgray.png?logo=github
-    :target: https://github.com/OCA/edi/tree/15.0/edi_voxel_sale_secondary_unit_oca
-    :alt: OCA/edi
+.. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fedi--voxel-lightgray.png?logo=github
+    :target: https://github.com/OCA/edi-voxel/tree/18.0/edi_voxel_sale_secondary_unit_oca
+    :alt: OCA/edi-voxel
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-edi_voxel_sale_secondary_unit_oca
+    :target: https://translation.odoo-community.org/projects/edi-voxel-18-0/edi-voxel-18-0-edi_voxel_sale_secondary_unit_oca
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/edi&target_branch=15.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/edi-voxel&target_branch=18.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module extends the functionality of 'Voxel sale order' module
-to match secondary units of measure instead of standard units of measure
+This module extends the functionality of 'Voxel sale order' module to
+match secondary units of measure instead of standard units of measure
 during sale order import process.
 
 During the process of a sales order import from voxel, for each sales
 order line, the following flow is followed:
 
-* If there is a matching 'secondary unit of measure', this is set and
+- If there is a matching 'secondary unit of measure', this is set and
   the imported qty is set as 'secondary qty'. Based on these data, the
   standard 'unit of measure' and 'quantity' are computed.
-* If there is no matching 'secondary unit of measure', standard quantity
+- If there is no matching 'secondary unit of measure', standard quantity
   and the matching standard unit of measure are set.
 
 **Table of contents**
@@ -56,10 +56,10 @@ change is the imported sales order data.
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues <https://github.com/OCA/edi/issues>`_.
+Bugs are tracked on `GitHub Issues <https://github.com/OCA/edi-voxel/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/edi/issues/new?body=module:%20edi_voxel_sale_secondary_unit_oca%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/edi-voxel/issues/new?body=module:%20edi_voxel_sale_secondary_unit_oca%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -67,21 +67,21 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Tecnativa
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* `Tecnativa <https://www.tecnativa.com>`_:
+- `Tecnativa <https://www.tecnativa.com>`__:
 
-  * Ernesto Tejeda
-  * Pedro M. Baeza
-  * Sergio Teruel
+  - Ernesto Tejeda
+  - Pedro M. Baeza
+  - Sergio Teruel
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is maintained by the OCA.
 
@@ -101,6 +101,6 @@ Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
 
 |maintainer-ernestotejeda| 
 
-This module is part of the `OCA/edi <https://github.com/OCA/edi/tree/15.0/edi_voxel_sale_secondary_unit_oca>`_ project on GitHub.
+This module is part of the `OCA/edi-voxel <https://github.com/OCA/edi-voxel/tree/18.0/edi_voxel_sale_secondary_unit_oca>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
