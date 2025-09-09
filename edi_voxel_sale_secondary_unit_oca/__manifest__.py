@@ -3,7 +3,7 @@
 {
     "name": "Edi Voxel Sale Secondary Unit Oca",
     "summary": "Map Voxel UoM to Sale Secondary UoM and Use Them",
-    "version": "15.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Sale",
     "website": "https://github.com/OCA/edi-voxel",
     "author": "Tecnativa, Odoo Community Association (OCA)",
