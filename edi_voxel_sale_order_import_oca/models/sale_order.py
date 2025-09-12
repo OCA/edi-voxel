@@ -272,7 +272,10 @@ class SaleOrder(models.Model):
             self._parse_discounts_product_voxel(line_vals, line_element, error_msgs)
             self._parse_taxes_product_voxel(line_vals, line_element, error_msgs)
             if line_vals:
-                so_line_obj.create(line_vals)
+                new_line = so_line_obj.new(line_vals)
+                new_line.play_onchanges(line_vals, list(line_vals))
+                vals = new_line._convert_to_write(new_line._cache)
+                so_line_obj.create(vals)
 
     def _parse_product_voxel(self, line_vals, line_element):
         product_data = line_element.attrib
