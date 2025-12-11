@@ -1,9 +1,10 @@
 [project]
 name = "odoo-addons-oca-edi-voxel"
-version = "17.0.20250821.1"
+version = "17.0.20251211.0"
 dependencies = [
     "odoo-addon-edi_voxel_account_invoice_oca>=17.0dev,<17.1dev",
     "odoo-addon-edi_voxel_oca>=17.0dev,<17.1dev",
+    "odoo-addon-edi_voxel_sale_order_import_oca>=17.0dev,<17.1dev",
 ]
 classifiers=[
     "Programming Language :: Python",
