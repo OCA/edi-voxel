@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,12 +16,14 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid "'%s' is not recognised as an XML file"
 msgstr ""
 
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "<br/><span style='font-weight: bold;'>The following errors were "
 "found:</span><br/><ul>%s</ul>"
@@ -30,6 +32,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "Can't find a suitable Unit of Measure for this data:\n"
 "\n"
@@ -40,6 +43,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "Can't find a suitable partner for this data:\n"
 "\n"
@@ -50,6 +54,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "Can't find a suitable product for this data:\n"
 "\n"
@@ -70,6 +75,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "Couldn't find any <b>Company</b> corresponding to the following information "
 "extracted from the Voxel document:<br/><ul>%s</ul>"
@@ -78,6 +84,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid ""
 "Couldn't find any <b>Delivery Address</b> corresponding to the following "
 "information extracted from the Voxel document:<br/><ul>%s</ul>"
@@ -86,6 +93,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid "Created automatically via voxel import (%s)."
 msgstr ""
 
@@ -102,6 +110,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid "Error creating the order"
 msgstr ""
 
@@ -134,6 +143,7 @@ msgstr ""
 #. module: edi_voxel_sale_order_import_oca
 #. odoo-python
 #: code:addons/edi_voxel_sale_order_import_oca/models/sale_order.py:0
+#, python-format
 msgid "This XML file is not XML-compliant"
 msgstr ""
 
