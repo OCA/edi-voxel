@@ -138,13 +138,13 @@ class ReportVoxelInvoice(models.AbstractModel):
             "Qty": str(line.quantity),
             "MU": line.product_uom_id.voxel_code,
             "UP": str(line.price_unit),
-            "Total": str(round(line.price_subtotal, 2)),
+            "Total": str(round(line.quantity * line.price_unit, 2)),
         }
 
     def _get_product_discounts_data(self, line):
         taxes = []
         if line.discount:
-            amount = round(line.price_subtotal / line.quantity - line.price_unit, 2)
+            amount = round(line.quantity * line.price_unit - line.price_subtotal, 2)
             taxes.append(
                 {
                     "Qualifier": line.discount > 0.0 and "Descuento" or "Cargo",
