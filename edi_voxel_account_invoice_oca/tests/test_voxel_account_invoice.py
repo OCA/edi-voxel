@@ -241,15 +241,15 @@ class TestVoxelAccountInvoice(BaseCommon):
                     "Qty": "3.0",
                     "MU": "Unidades",
                     "UP": "147.0",
-                    "Total": "352.8",
+                    "Total": "441.0",
                 },
                 "taxes": [
-                    {"Rate": "15.0", "Type": False},
-                    {"Rate": "30.0", "Type": False},
+                    {"Rate": "15.0", "Type": False, "Amount": "52.92"},
+                    {"Rate": "30.0", "Type": False, "Amount": "105.84"},
                 ],
                 "discounts": [
                     {
-                        "Amount": "-29.4",
+                        "Amount": "88.2",
                         "Qualifier": "Descuento",
                         "Rate": "20.0",
                         "Type": "Comercial",

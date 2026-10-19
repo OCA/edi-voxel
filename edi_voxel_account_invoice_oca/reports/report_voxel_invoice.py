@@ -138,13 +138,13 @@ class ReportVoxelInvoice(models.AbstractModel):
             "Qty": str(line.quantity),
             "MU": line.product_uom_id.voxel_code,
             "UP": str(line.price_unit),
-            "Total": str(round(line.price_subtotal, 2)),
+            "Total": str(round(line.quantity * line.price_unit, 2)),
         }
 
     def _get_product_discounts_data(self, line):
         taxes = []
         if line.discount:
-            amount = round(line.price_subtotal / line.quantity - line.price_unit, 2)
+            amount = round(line.quantity * line.price_unit - line.price_subtotal, 2)
             taxes.append(
                 {
                     "Qualifier": line.discount > 0.0 and "Descuento" or "Cargo",
@@ -157,9 +157,27 @@ class ReportVoxelInvoice(models.AbstractModel):
 
     def _get_product_taxes_data(self, line):
         taxes = []
+        if not line.tax_ids:
+            return taxes
+        tax_obj = self.env["account.tax"]
+        base_line = line.move_id._prepare_product_base_line_for_taxes_computation(line)
         for tax in line.tax_ids:
             rate = tax.amount_type != "group" and str(tax.amount) or False
-            taxes.append({"Type": tax.voxel_tax_code, "Rate": rate})
+            tax_base_line = dict(base_line, tax_ids=tax)
+            tax_obj._add_tax_details_in_base_line(tax_base_line, line.company_id)
+            tax_details = tax_base_line["tax_details"]
+            tax_amount = round(
+                tax_details["raw_total_included_currency"]
+                - tax_details["raw_total_excluded_currency"],
+                2,
+            )
+            taxes.append(
+                {
+                    "Type": tax.voxel_tax_code,
+                    "Rate": rate,
+                    "Amount": str(tax_amount),
+                }
+            )
         return taxes
 
     def _get_taxes_data(self, invoice):
